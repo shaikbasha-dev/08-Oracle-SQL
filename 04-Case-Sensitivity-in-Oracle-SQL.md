@@ -3,9 +3,13 @@
 ## Core Case Sensitivity Rules
 
 I. Commands and Keywords are not case sensitive.
+
 II. Table name and Column name are not case sensitive.
+
 III. Data types are not case sensitive.
+
 IV. Data in the table are case sensitive.
+
 V. Constraints are not case sensitive.
 
 ## Technical Explanations and Practical Examples
@@ -13,11 +17,15 @@ V. Constraints are not case sensitive.
 ### I. Commands and Keywords are not case sensitive.
 
 #### Commands in Oracle SQL
+
 Commands are the main action words or verbs that start a SQL statement to instruct the database engine on what operation to perform.
+
 * **List:** `SELECT`, `INSERT`, `UPDATE`, `DELETE`, `CREATE`, `DROP`, `ALTER`, `TRUNCATE`, `GRANT`, `REVOKE`, `COMMIT`, `ROLLBACK`.
 
 #### Keywords in Oracle SQL
+
 Keywords are reserved words that have a special structural meaning within a statement to help construct clauses or specify conditions.
+
 * **List:** `FROM`, `WHERE`, `AND`, `OR`, `NOT`, `IN`, `LIKE`, `BETWEEN`, `IS`, `NULL`, `INTO`, `VALUES`, `TABLE`, `AS`, `ORDER`, `BY`, `GROUP`, `HAVING`.
 
 #### Examples
@@ -142,6 +150,7 @@ SELECT * FROM student WHERE gender = 'Male';
 
 
 *Result:* **Returns Row.** (Matches literal table data)
+
 * **Example Query B (Mismatched Case):**
 ```sql
 SELECT * FROM student WHERE gender = 'male';
@@ -150,6 +159,7 @@ SELECT * FROM student WHERE gender = 'male';
 
 
 *Result:* **no data found** (lowercase 'm' does not match uppercase 'M')
+
 * **Example Query C (Mismatched Case):**
 ```sql
 SELECT * FROM student WHERE gender = 'MALE';
