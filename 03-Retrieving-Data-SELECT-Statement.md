@@ -9,7 +9,7 @@
 
 ## Sample Data Profile
 
-### Student Table Reference 2
+### Student Table Reference 
 | NAME | AGE | GENDER | MARKS |
 | :--- | :--- | :--- | :--- |
 | Cat | 23 | Male | 93 |
