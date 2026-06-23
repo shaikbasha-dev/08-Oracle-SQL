@@ -1,0 +1,337 @@
+# LIKE Operator
+
+## Definition
+
+1. LIKE Operator is called **Pattern Matching** in SQL.
+2. Wherever the exact match of data is not possible, we can perform pattern matching using the LIKE operator.
+3. There are two wildcard characters used with LIKE:
+
+| Wildcard | Description                     |
+| -------- | ------------------------------- |
+| %        | Matches zero or more characters |
+| _        | Matches exactly one character   |
+
+**Note:** `%` and `_` are called **Meta Characters** or **Wildcards** in SQL.
+
+---
+
+## Question 1
+
+### Question
+
+Write a query to display the details of employees whose first name starts with 'A'.
+
+### Query
+
+```sql
+SELECT *
+FROM emp
+WHERE f_name LIKE 'A%';
+```
+
+### Output
+
+| EMP_ID | F_NAME | L_NAME | JOB_ID   | SALARY | DEPT_ID |
+| ------ | ------ | ------ | -------- | -----: | ------: |
+| 1      | Akash  | Pandey | AD_PRES  |  34000 |      21 |
+| 4      | Ashwin | K      | IT_PROG  |  36000 |     110 |
+| 8      | Andy   | J      | ST_CLERK |  28500 |      22 |
+| 10     | Adam   | Sam    | ST_CLERK |  53000 |     110 |
+
+---
+
+## Question 2
+
+### Question
+
+Write a query to display department id and department name where department name starts with 'AC'.
+
+### Query
+
+```sql
+SELECT dept_id, dept_name
+FROM dept
+WHERE dept_name LIKE 'AC%';
+```
+
+### Output
+
+| Result        |
+| ------------- |
+| No Data Found |
+
+---
+
+## Question 3
+
+### Question
+
+Write a query to display manager id whose department id starts with 2.
+
+### Query
+
+```sql
+SELECT manager_id
+FROM emp
+WHERE dept_id LIKE '2%';
+```
+
+### Output
+
+| MANAGER_ID |
+| ---------- |
+| NULL       |
+| 100        |
+| 101        |
+| 110        |
+| NULL       |
+| NULL       |
+| 117        |
+| 165        |
+| 198        |
+| 114        |
+| NULL       |
+| NULL       |
+| NULL       |
+| NULL       |
+| NULL       |
+
+---
+
+## Question 4
+
+### Question
+
+Write a query to display grades from the job grades table where low salary ends with 1.
+
+### Query
+
+```sql
+SELECT grade
+FROM j_grade
+WHERE low_sal LIKE '%1';
+```
+
+### Output
+
+| GRADE |
+| ----- |
+| B     |
+| D     |
+| F     |
+| H     |
+| I     |
+| J     |
+
+---
+
+## Question 5
+
+### Question
+
+Write a query to display details of department whose department name ends with 'ng'.
+
+### Query
+
+```sql
+SELECT *
+FROM dept
+WHERE dept_name LIKE '%ng';
+```
+
+### Output
+
+| DEPT_ID | DEPT_NAME   | MANAGER_ID | LOC_ID |
+| ------- | ----------- | ---------- | ------ |
+| 21      | Marketing   | 301        | 2200   |
+| 22      | Shipping    | 302        | 2300   |
+| 190     | Contracting | NULL       | 2800   |
+
+---
+
+## Question 6
+
+### Question
+
+Write a query to display department id and department name whose manager id ends with 0.
+
+### Query
+
+```sql
+SELECT dept_id, dept_name
+FROM dept
+WHERE manager_id LIKE '%0';
+```
+
+### Output
+
+| DEPT_ID | DEPT_NAME |
+| ------- | --------- |
+| 20      | Admin     |
+
+---
+
+## Question 7
+
+### Question
+
+Write a query to display details of employees whose first name contains 'an'.
+
+### Query
+
+```sql
+SELECT *
+FROM emp
+WHERE f_name LIKE '%an%';
+```
+
+### Output
+
+| EMP_ID | F_NAME      | L_NAME   |
+| ------ | ----------- | -------- |
+| 2      | Prabhakaran | Ganeshan |
+| 9      | Daniel      | King     |
+| 11     | Meghana     | Devraj   |
+| 12     | Madavan     | Manish   |
+| 17     | Pankaj      | Patel    |
+| 18     | Janardhan   | Tohn     |
+
+---
+
+## Question 8
+
+### Question
+
+Write a query to display last name of employees whose last name contains 'am'.
+
+### Query
+
+```sql
+SELECT *
+FROM emp
+WHERE l_name LIKE '%am%';
+```
+
+### Output
+
+| EMP_ID | F_NAME | L_NAME   |
+| ------ | ------ | -------- |
+| 5      | John   | Williams |
+| 10     | Adam   | Sam      |
+
+---
+
+## Question 9
+
+### Question
+
+Write a query to display details of employees whose first name second character is 'r'.
+
+### Query
+
+```sql
+SELECT *
+FROM emp
+WHERE f_name LIKE '_r%';
+```
+
+### Output
+
+| EMP_ID | F_NAME      | L_NAME   |
+| ------ | ----------- | -------- |
+| 2      | Prabhakaran | Ganeshan |
+| 13     | Braven      | Bhupathi |
+| 16     | Mrudul      | Kumar    |
+
+---
+
+## Question 10
+
+### Question
+
+Write a query to display details of employees whose mail id third character is '@'.
+
+### Query
+
+```sql
+SELECT *
+FROM emp
+WHERE email LIKE '__@%';
+```
+
+### Output
+
+| EMP_ID | F_NAME      | EMAIL                               |
+| ------ | ----------- | ----------------------------------- |
+| 2      | Prabhakaran | [pk@gmail.com](mailto:pk@gmail.com) |
+
+---
+
+## Question 11
+
+### Question
+
+Write a query to display the details of employees whose last name fourth character from last is 'n'.
+
+### Query
+
+```sql
+SELECT *
+FROM emp
+WHERE l_name LIKE '%n___';
+```
+
+### Output
+
+| EMP_ID | F_NAME  | L_NAME |
+| ------ | ------- | ------ |
+| 1      | Akash   | Pandey |
+| 12     | Madavan | Manish |
+
+---
+
+## Question 12
+
+### Question
+
+Write a query to display the phone number from employee table whose phone number third digit from last is 3.
+
+### Query
+
+```sql
+SELECT phone_number
+FROM emp
+WHERE phone_number LIKE '%3__';
+```
+
+### Output
+
+| PHONE_NUMBER |
+| ------------ |
+| 53434334     |
+| 3443333      |
+
+---
+
+## Question 13
+
+### Question
+
+Write a query to display the last name and salary from emp table whose last name has exactly 5 characters.
+
+### Query
+
+```sql
+SELECT l_name, salary
+FROM emp
+WHERE l_name LIKE '_____';
+```
+
+### Output
+
+| L_NAME | SALARY |
+| ------ | -----: |
+| Singh  |  12000 |
+| Kumar  |  19500 |
+| Patel  |  39500 |
+| Whala  |   9500 |
