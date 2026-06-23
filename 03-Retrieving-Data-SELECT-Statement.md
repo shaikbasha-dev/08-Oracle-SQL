@@ -7,15 +7,16 @@
 
 ---
 
-## Sample Data Profiles
+## Sample Data Profile
 
-### Student Table Reference 2
+### Student Table Reference 
 | NAME | AGE | GENDER | MARKS |
 |---|---|---|---|
-| Cat | 23 | Male | 93 |
-| Rat | 24 | Female | 88 |
-| Tiger | 26 | Female | 98 |
-| Lion | 18 | male | 34 |
+| Apple | 16 | Male | 98 |
+| Banana | 19 | Male | 65 |
+| Guava | 15 | Female | 35 |
+| Orange | 22 | Female | 50 |
+| Mango | 18 | Male | 100 |
 
 ---
 
@@ -30,10 +31,11 @@ SELECT name FROM student;
 
 ### Output:
 NAME
-Cat
-Rat
-Tiger
-Lion
+Apple
+Banana
+Guava
+Orange
+Mango
 
 ### Query 2
 Write a query to display name, age, gender from the student table.
