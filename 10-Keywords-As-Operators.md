@@ -17,7 +17,7 @@ Keywords as Operators are special SQL keywords used to filter data based on spec
 
 ### Definition
 
-The DISTINCT keyword is used to display only unique values from a column by removing duplicate values.
+The **DISTINCT** keyword is used to display **only unique values** from a column by **removing duplicate values.**
 
 | Question                                                           |
 | ------------------------------------------------------------------ |
@@ -81,7 +81,7 @@ select distinct salary from emp;
 
 ### Definition
 
-The BETWEEN operator is used to retrieve values within a specified range.
+The **BETWEEN** operator is used to **retrieve values within a specified range.**
 
 | Question                                                                                            |
 | --------------------------------------------------------------------------------------------------- |
@@ -183,7 +183,7 @@ select * from j_grade where high_sal not between 3000 and 55000;
 
 ### Definition
 
-The IN operator is used to compare a value with multiple values specified in a list.
+The **IN** operator is used to **compare a value with multiple values specified in a list.**
 
 | Question                                                                           |
 | ---------------------------------------------------------------------------------- |
@@ -231,7 +231,7 @@ select dept_id, dept_name from dept where loc_id in(2500, 2700, 2900);
 
 ### Definition
 
-The NOT IN operator is used to exclude values specified in the list.
+The **NOT IN** operator is used to **exclude values specified in the list.**
 
 | Question                                                                        |
 | ------------------------------------------------------------------------------- |
@@ -259,7 +259,7 @@ select low_sal,high_sal from j_grade where grade not in('A','B','C');
 
 ### Definition
 
-The IS NULL operator is used to display rows where a column contains NULL values.
+The **IS NULL** operator is used to **display rows where a column contains NULL values.**
 
 | Question                                                                          |
 | --------------------------------------------------------------------------------- |
@@ -284,7 +284,7 @@ select * from emp where commission_pct is null;
 
 ### Definition
 
-The IS NOT NULL operator is used to display rows where a column contains values other than NULL.
+The **IS NOT NULL** operator is used to display **rows where a column contains values other than NULL.**
 
 | Question                                                             |
 | -------------------------------------------------------------------- |
