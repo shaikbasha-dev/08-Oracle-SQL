@@ -2,7 +2,7 @@
 
 ## What is Data?
 
-Data is a collection of facts and figures representing information.
+Data is a collection of **small volume of facts and figures** representing information.
 
 ### Examples
 
@@ -16,7 +16,7 @@ Data is a collection of facts and figures representing information.
 
 ## What is a Database?
 
-A Database is a collection of a large volume of facts and figures stored in an organized manner.
+A Database is a collection of a **large volume of facts and figures** stored in an organized manner.
 
 ### Examples
 
@@ -38,7 +38,7 @@ The main objectives of data management are:
 
 ## Data Management in Olden Days
 
-In earlier days, information was stored manually using ledgers.
+In earlier days, information was stored manually using **ledgers.**
 
 Managing large volumes of data manually was:
 
@@ -81,7 +81,7 @@ Programming languages are effective for storing small amounts of data but become
 
 ## DBMS (Database Management System)
 
-DBMS was introduced to manage large amounts of data efficiently.
+DBMS was introduced to manage **large amounts of data efficiently.**
 
 DBMS stands for:
 
@@ -156,8 +156,8 @@ SQL stands for **Structured Query Language**.
 
 ## History of SQL
 
-- SQL was developed in 1970.
-- Invented by Raymond Boyce and Donald Chamberlin.
+- SQL was developed in **1970.**
+- Invented by **Raymond Boyce and Donald Chamberlin.**
 - SQL is also known as **SEQUEL** (Structured English Query Language).
 
 ---
@@ -228,6 +228,7 @@ INSERT INTO table_name
 VALUES(value1, value2, value3);
 ```
 
+
 ### Example
 
 ```sql
@@ -242,13 +243,27 @@ VALUES(
 );
 ```
 
+```sql
+INSERT INTO table_name (column_name1, column_name2, column_name3) VALUES(value1, value2, value3);
+```
+
+
+### Example
+
+```sql
+INSERT INTO student (name, age)
+VALUES(
+'Shaik Mahaboob Basha',
+23);
+```
+
 ---
 
 ## Important Note
 
-In SQL, every statement ends with a semicolon (`;`).
+In SQL, every statement ends with a **semicolon (`;`).**
 
-The semicolon indicates the end of a SQL statement.
+The semicolon indicates the **end of a SQL statement.**
 
 ---
 
