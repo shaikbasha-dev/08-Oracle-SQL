@@ -14,7 +14,7 @@ Constraints are the rules or restrictions which are implemented on particular co
 
 ## 1. Unique
 
-Unique constraint ensures that the particular column on which it is implemented cannot have duplicate values but can have null values.
+**Unique** constraint ensures that the particular column on which it is implemented **cannot have duplicate values but can have null values.**
 
 ### Syntax
 ```sql
@@ -40,14 +40,12 @@ CREATE TABLE student (
 > * $\text{Null} \neq \text{Null}$
 > * $\text{Null} \neq 0$
 > * $\text{Null} + 5 = \text{Null}$ (Where $+$ acts as an Arithmetic operator)
-> 
-> 
 
 ---
 
 ## 2. Not Null
 
-Not null constraint ensures that particular column on which it is applied or implemented cannot have null values but can have duplicates.
+**Not null** constraint ensures that particular column on which it is applied or implemented **cannot have null values but can have duplicates.**
 
 ### Syntax
 
@@ -73,11 +71,11 @@ CREATE TABLE student (
 
 ## 3. Primary Key
 
-* Primary key is a combination of Unique and Not null constraint.
-* Primary Key constraint ensures that the particular column on which is implemented cannot have duplicate values and cannot have null values.
+* Primary key is a combination of **Unique and Not null constraint.**
+* Primary Key constraint ensures that the particular column on which is implemented **cannot have duplicate values and cannot have null values.**
 * There can be only and one primary key for one table.
 * Primary Key is the one which will help to identify each row uniqly in a table.
-* A table with primary key is called Parent Key.
+* A table with primary key is called **Parent Key.**
 
 ### Syntax
 
@@ -105,11 +103,11 @@ CREATE TABLE student (
 ## 4. Foreign Key
 
 * Foreign Key will always refer primary key column of another table for its identity.
-* The concept of RDBMS is achieved by Foreign Key.
-* RDBMS stands for Relational Database Management System / Software.
-* Foreign Key column will always accept both duplicate and null values.
-* Foreign Key constraint is also called as “Referential Integrity Constraint”.
-* A table with Foreign Key is called Child table.
+* The concept of **RDBMS** is achieved by Foreign Key.
+* RDBMS stands for **Relational Database Management System / Software.**
+* Foreign Key column will always **accept both duplicate and null values.**
+* Foreign Key constraint is also called as **“Referential Integrity Constraint”.**
+* A table with Foreign Key is called **Child table.**
 
 ### Syntax
 
@@ -152,7 +150,7 @@ CREATE TABLE Employee (
 
 ## 5. Check
 
-Check constraint ensures that the values that are getting inserted into the particular column in which it is implemented satisfies the given check condition.
+**Check** constraint ensures that the values that are getting inserted into the particular column in which it is implemented **satisfies the given check condition.**
 
 ### Syntax
 
@@ -177,7 +175,7 @@ CREATE TABLE student (
 
 ## 6. Default
 
-Default Constraint ensures that when there is no value specified into the column on which it is implemented it well take the default value mentioned.
+**Default** Constraint ensures that when there is no value specified into the column on which it is implemented it well **take the default value mentioned.**
 
 ### Syntax
 
