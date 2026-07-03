@@ -177,7 +177,7 @@ SELECT * FROM student WHERE gender = 'MALE';
 
 The validation rules or integrity checks applied to columns to restrict what kind of data can be entered.
 
-* **List:** `PRIMARY KEY`, `NOT NULL`, `UNIQUE`, `CHECK`, `FOREIGN KEY`.
+* **List:** `PRIMARY KEY`, `NOT NULL`, `UNIQUE`, `CHECK`, `FOREIGN KEY`, `DEFAULT`.
 
 #### Examples
 
