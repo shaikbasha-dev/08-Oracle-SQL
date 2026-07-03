@@ -2,8 +2,8 @@
 
 ## Concepts of Retrieval
 
-1. **Selection:** Fetching data from the table by eliminating certain rows from it.
-2. **Projection:** Fetching data from the table without eliminating any rows from the table.
+1. **Selection:** Fetching data from the table by **eliminating** certain rows from it.
+2. **Projection:** Fetching data from the table **without eliminating** any rows from the table.
 
 ---
 
