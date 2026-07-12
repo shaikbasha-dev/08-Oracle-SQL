@@ -1,18 +1,32 @@
-# Oracle-SQL
+# Oracle SQL
 
 ## Overview
 
 This repository contains comprehensive notes, SQL queries, examples, database concepts, and interview preparation materials on **Oracle SQL**.
 
-Oracle SQL is one of the most widely used relational database languages for managing, retrieving, and manipulating data. This repository is designed in a **beginner to advanced** learning path and covers SQL fundamentals, database objects, joins, subqueries, ER diagrams, normalization, and relational model queries.
+Oracle SQL is a widely used relational database language for managing, retrieving, and manipulating data. This repository follows a beginner-to-advanced learning path and covers SQL fundamentals, data retrieval, database objects, joins, subqueries, ER diagrams, normalization, and relational model queries.
 
-The content is organized with theory, syntax, examples, tabular outputs, and interview-oriented explanations.
+The content is organized with:
 
----
+* Theory and detailed explanations
+* SQL syntax and queries
+* Practical examples
+* Tabular outputs
+* Database concepts
+* Interview-oriented explanations
+* Structured revision material
+
+The primary goal of this repository is to build strong Oracle SQL and database fundamentals for Java Full Stack Development, placement preparation, and technical interviews.
+
+## Repository Overview
+
+![Oracle SQL Repository Overview](Oracle-SQL-Repository-Overview.png)
 
 ## Repository Structure
 
 ### 01 - Introduction to Oracle SQL
+
+This section introduces Oracle SQL and fundamental database concepts.
 
 Topics Covered:
 
@@ -20,11 +34,11 @@ Topics Covered:
 * Features of Oracle SQL
 * SQL Categories
 * SQL Execution Process
-* Basic Concepts
-
----
+* Basic SQL Concepts
 
 ### 02 - Oracle SQL Datatypes
+
+This section explains commonly used Oracle SQL datatypes.
 
 Topics Covered:
 
@@ -35,11 +49,12 @@ Topics Covered:
 * NUMBER
 * CHAR
 * DATE
-* Examples and Syntax
-
----
+* Datatype Syntax
+* Practical Examples
 
 ### 03 - Retrieving Data - SELECT Statement
+
+This section explains data retrieval using the SELECT statement.
 
 Topics Covered:
 
@@ -47,22 +62,24 @@ Topics Covered:
 * Displaying All Columns
 * Displaying Specific Columns
 * Expressions
-* Syntax and Examples
-
----
+* SELECT Syntax
+* Query Examples
 
 ### 04 - Case Sensitivity in Oracle SQL
+
+This section explains case sensitivity rules and comparison behavior in Oracle SQL.
 
 Topics Covered:
 
 * Case Sensitivity Rules
-* Uppercase and Lowercase Comparisons
-* Best Practices
-* Examples
-
----
+* Uppercase Comparisons
+* Lowercase Comparisons
+* SQL Best Practices
+* Practical Examples
 
 ### 05 - Constraints in Oracle SQL
+
+This section explains database constraints used to maintain data integrity.
 
 Topics Covered:
 
@@ -74,9 +91,9 @@ Topics Covered:
 * DEFAULT
 * Constraint Examples
 
----
-
 ### 06 - Tables in Oracle SQL
+
+This section covers commonly used sample database tables and their structures.
 
 Topics Covered:
 
@@ -85,10 +102,11 @@ Topics Covered:
 * J_GRADE Table
 * Table Structures
 * Sample Data
-
----
+* Table-Based Query Practice
 
 ### 07 - Operators in Oracle SQL
+
+This section explains operators used in Oracle SQL queries.
 
 Topics Covered:
 
@@ -96,33 +114,33 @@ Topics Covered:
 * Relational Operators
 * Logical Operators
 * Special Operators
-* Examples
-
----
+* Operator Examples
 
 ### 08 - Column Aliases, Relational and Concatenation Operators
+
+This section explains aliases and operators used to improve and combine query output.
 
 Topics Covered:
 
 * Column Aliases
 * Concatenation Operator
 * Relational Operators
-* Examples
-
----
+* Query Examples
 
 ### 09 - Dual Table and Complex Concatenations
+
+This section explains the Oracle DUAL table and complex concatenation expressions.
 
 Topics Covered:
 
 * DUAL Table
 * Concatenation
 * Complex Expressions
-* Examples
+* Query Examples
 
----
+### 10 - Keywords as Operators
 
-### 10 - Keywords As Operators
+This section explains SQL keywords commonly used for filtering data.
 
 Topics Covered:
 
@@ -134,22 +152,23 @@ Topics Covered:
 * IS NULL
 * IS NOT NULL
 
----
+### 11 - LIKE Operator and Logical Operators
 
-### 11 - Like Operator and Logical Operators
+This section explains pattern matching and logical query conditions.
 
 Topics Covered:
 
 * LIKE Operator
-* Wildcards (% and _)
+* Percentage Wildcard (%)
+* Underscore Wildcard (_)
 * Pattern Matching
 * AND Operator
 * OR Operator
 * Operator Precedence
 
----
-
 ### 12 - ORDER BY Clause
+
+This section explains sorting query results using the ORDER BY clause.
 
 Topics Covered:
 
@@ -157,11 +176,11 @@ Topics Covered:
 * DESC Sorting
 * Sorting Numbers
 * Sorting Dates
-* Examples
-
----
+* Query Examples
 
 ### 13 - Functions
+
+This section covers commonly used Oracle SQL functions.
 
 Topics Covered:
 
@@ -177,22 +196,22 @@ Topics Covered:
 * SUM()
 * AVG()
 
----
-
 ### 14 - GROUP BY Clause
+
+This section explains grouping rows and performing aggregate calculations.
 
 Topics Covered:
 
-* GROUP BY
+* GROUP BY Clause
 * MIN()
 * MAX()
 * COUNT()
 * Aggregate Functions
 * Grouping Examples
 
----
-
 ### 15 - HAVING Clause
+
+This section explains filtering grouped query results using the HAVING clause.
 
 Topics Covered:
 
@@ -201,9 +220,9 @@ Topics Covered:
 * GROUP BY with HAVING
 * ORDER BY with HAVING
 
----
+### 16 - Subqueries - Nested Queries
 
-### 16 - Subqueries (Nested Queries)
+This section explains nested queries and different subquery types.
 
 Topics Covered:
 
@@ -211,11 +230,11 @@ Topics Covered:
 * Multi Row Subqueries
 * Nested Queries
 * IN Operator
-* Examples
-
----
+* Subquery Examples
 
 ### 17 - Joins
+
+This section explains combining data from multiple relational database tables.
 
 Topics Covered:
 
@@ -229,43 +248,41 @@ Topics Covered:
 * Cartesian Join
 * Self Join
 
----
+### 18 - SQL Commands
 
-### 18 - Commands
+This section explains the major SQL command categories.
 
-Topics Covered:
-
-#### DDL
+#### DDL - Data Definition Language
 
 * CREATE
 * ALTER
 * TRUNCATE
 * DROP
 
-#### DML
+#### DML - Data Manipulation Language
 
 * INSERT
 * UPDATE
 * DELETE
 
-#### TCL
+#### TCL - Transaction Control Language
 
 * COMMIT
 * ROLLBACK
 * SAVEPOINT
 
-#### DCL
+#### DCL - Data Control Language
 
 * GRANT
 * REVOKE
 
-#### DQL
+#### DQL - Data Query Language
 
 * SELECT
 
----
-
 ### 19 - Miscellaneous Queries
+
+This section contains commonly asked and practical Oracle SQL queries.
 
 Topics Covered:
 
@@ -277,9 +294,9 @@ Topics Covered:
 * INTERSECT
 * MINUS
 
----
-
 ### 20 - Database Objects
+
+This section explains important Oracle database objects.
 
 Topics Covered:
 
@@ -290,9 +307,9 @@ Topics Covered:
 * Sequences
 * Synonyms
 
----
-
 ### 21 - Difference Between Oracle and MySQL
+
+This section compares Oracle Database and MySQL concepts.
 
 Topics Covered:
 
@@ -303,9 +320,9 @@ Topics Covered:
 * Case Sensitivity
 * Multiple Databases
 
----
-
 ### 22 - ER Diagrams and ER Schema
+
+This section explains Entity Relationship concepts and database modeling.
 
 Topics Covered:
 
@@ -319,9 +336,9 @@ Topics Covered:
 * ER Schema
 * University Database ER Diagram
 
----
-
 ### 23 - Normalization
+
+This section explains relational database normalization and data design concepts.
 
 Topics Covered:
 
@@ -332,9 +349,9 @@ Topics Covered:
 * Determinant
 * Functional Dependency
 
----
-
 ### 24 - Relational Model Assignment Queries
+
+This section contains practical relational database query exercises.
 
 Topics Covered:
 
@@ -345,92 +362,147 @@ Topics Covered:
 * Aggregate Queries
 * JOIN Queries
 
----
-
 ## Features of This Repository
 
-✔ Beginner to Advanced Oracle SQL Concepts
+This repository provides:
 
-✔ Well Structured Learning Path
-
-✔ Theory with Detailed Explanations
-
-✔ SQL Syntax and Examples
-
-✔ Industry Standard SQL Queries
-
-✔ Tabular Outputs
-
-✔ Database Objects
-
-✔ Joins and Subqueries
-
-✔ ER Diagrams and ER Schema
-
-✔ Normalization Concepts
-
-✔ Relational Model Queries
-
-✔ Interview-Oriented Content
-
----
+* Beginner to advanced Oracle SQL concepts
+* Well-structured learning path
+* Theory with detailed explanations
+* SQL syntax and practical examples
+* Industry-oriented SQL queries
+* Tabular query outputs
+* Data retrieval and filtering concepts
+* Single row and aggregate functions
+* Joins and subqueries
+* Database objects
+* SQL constraints
+* SQL command categories
+* ER diagrams and ER schema
+* Normalization concepts
+* Relational model queries
+* Interview-oriented content
+* Suitable for revision and technical interviews
 
 ## Technologies Used
 
 * Oracle SQL
+* Oracle Database
+* Structured Query Language (SQL)
 * Relational Database Management System (RDBMS)
-* SQL
 * PL/SQL Basics
 * Git
 * GitHub
 * Markdown
 
----
+## Interview Preparation
+
+The concepts in this repository support interview preparation for:
+
+* SQL Fundamentals
+* Oracle SQL Datatypes
+* SELECT Queries
+* SQL Operators
+* WHERE and Filtering Concepts
+* ORDER BY
+* Single Row Functions
+* Aggregate Functions
+* GROUP BY
+* HAVING
+* Subqueries
+* SQL Joins
+* DDL, DML, TCL, DCL, and DQL
+* Database Objects
+* Constraints
+* ER Diagrams
+* Normalization
+* Relational Database Concepts
+* Frequently Asked SQL Queries
+
+The interview preparation content is structured to strengthen SQL and database concepts for Java Full Stack Developer and database-related technical interviews.
 
 ## Purpose
 
 This repository is created to:
 
 * Build strong Oracle SQL concepts
-* Learn SQL from basics to advanced topics
-* Practice industry-standard SQL queries
-* Understand database design concepts
-* Prepare for SQL and Database interviews
+* Learn SQL from basic to advanced topics
+* Practice industry-oriented SQL queries
+* Understand relational database management
+* Learn data retrieval, filtering, sorting, and grouping
+* Understand joins and subqueries
+* Learn database objects and constraints
+* Understand ER diagrams and database modeling
+* Learn normalization concepts
+* Practice relational model queries
+* Prepare for SQL and database technical interviews
 * Strengthen Java Full Stack Developer database skills
-
----
+* Maintain structured Oracle SQL learning notes
+* Support quick revision and placement preparation
 
 ## Repository Highlights
 
-* 24 Structured Markdown Files
-* Theory + SQL Queries + Outputs
-* Database Objects
-* Joins and Subqueries
-* ER Diagrams
+* 24 structured Oracle SQL sections
+* Theory, SQL queries, and outputs
+* Beginner-to-advanced learning path
+* Data retrieval and filtering
+* SQL operators and functions
+* GROUP BY and HAVING
+* Joins and subqueries
+* SQL command categories
+* Database objects
+* Constraints and data integrity
+* ER diagrams and ER schema
 * Normalization
-* Relational Model Queries
-* Beginner Friendly
-* Interview Oriented
+* Relational model queries
+* Industry-oriented SQL concepts
+* Interview-oriented content
 
----
+## Who Can Use This Repository
+
+This repository is useful for:
+
+* Beginners learning SQL
+* Oracle SQL learners
+* Database learners
+* Java Full Stack Developer aspirants
+* B.Tech and degree students
+* College students
+* Freshers preparing for technical interviews
+* Placement preparation
+* SQL and database interview preparation
+* Developers revising relational database concepts
+
+## Author
+
+**Shaik Mahaboob Basha**
+
+B.Tech - Electronics and Communication Engineering
+
+Aspiring Java Full Stack Developer
 
 ## Future Improvements
 
-Additional topics may include:
+Additional advanced topics may include:
 
 * PL/SQL Blocks
 * Cursors
-* Exception Handling
+* PL/SQL Exception Handling
 * Packages
 * Advanced Triggers
 * Advanced Stored Procedures
 * Materialized Views
 * Transactions in Detail
 * Performance Tuning Basics
+* Advanced Indexing Concepts
 * SQL Interview Questions and Answers
 
----
+## Support
 
-⭐ If you find this repository useful, consider giving it a **Star**.
+If this repository helps you in your learning journey, interview preparation, or future reference, please consider giving it a **Star ⭐**. Your support is greatly appreciated and motivates me to continue creating high-quality educational repositories.
 
-**Happy Learning and Keep Querying!**
+## Conclusion
+
+This repository is created as a comprehensive Oracle SQL learning and database interview preparation resource. It contains SQL fundamentals, datatypes, data retrieval, operators, functions, grouping, joins, subqueries, SQL commands, database objects, constraints, ER diagrams, normalization, relational model queries, and practical SQL examples arranged in a structured manner for easy learning, revision, and technical interview preparation.
+
+Happy Learning and Keep Coding!
